@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab_6</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        const tablica = [8, 10, 12, 14, 15, 19, 20];
+        const sumaa = tablica.reduce((a, b) => a + b, 0);
+        console.log("Suma liczb: ", sumaa);
+        const parzyste = tablica.filter(el => el % 2 == 0);
+        console.log("Liczby parzysty: ", parzyste);
+        const mnozymy = tablica.map(el => el * 3);
+        console.log("Mnożona na 3: ", mnozymy);
+        tablica.push(68136);
+        let index = tablica.indexOf(68136);
+        console.log("Index numeru albumu: ", index);
+        tablica.pop(68136);
+        console.log("Srednia tablicy: ", sumaa/tablica.length);
+        for(i=0; i<tablica.length; i++){
+            maxliczba = tablica[i];
+        }
+        console.log("Max tablicy: ",maxliczba);
+    </script>
+</body>
+</html>
